@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
+:root {
+  --color-brand-1: hsl(0, 0%, 81%);
+  --color-brand-2: hsla(0, 0%, 100%, 0.5);
+  --color-brand-3: hsla(0, 0%, 100%, 0.7);
+
+  --color-site-1: hsl(210, 46%, 95%);
+
+  --color-site-2: hsl(263, 55%, 52%);
+  --color-site-3: hsl(217, 19%, 35%);
+  --color-site-4: hsl(0, 0%, 100%);
+  --color-site-5: hsl(219, 29%, 14%);
+
+  --font-barlow-semi: "Barlow Semi Condensed", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-barlow-semi);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-site-1);
+}
+
+main {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 2rem;
+}
+
+@media screen and (min-width: 600px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 4rem;
+  }
+}
