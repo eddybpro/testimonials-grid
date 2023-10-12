@@ -32,6 +32,8 @@ html {
   width: 100%;
   min-height: 100vh;
   background-color: var(--color-site-1);
+  display: grid;
+  place-content: center;
 }
 
 main {
